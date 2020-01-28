@@ -13,18 +13,45 @@
 
 
         <LinearLayout
+            android:id="@+id/ll"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/today"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:text="@string/today"
                 android:textAlignment="center"
-                android:textAllCaps="true"
-                android:textSize="24sp"
 
+                android:textAllCaps="true"
+                android:textSize="24sp" />
+            <ImageView
+                android:id="@+id/image_today"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@id/today"
+                android:contentDescription="@string/today"
+                android:src="@drawable/ic_today"
+                />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/city"
+               android:text="@string/city"
+               android:textAlignment="center"
+               />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/temp"
+                android:textAlignment="center"
+                />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
 
         </LinearLayout>
@@ -34,7 +61,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/ll"
         app:layout_constraintStart_toStartOf="parent"
 
          />
