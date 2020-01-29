@@ -4,7 +4,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 
-class BottomNavigationView extends View {
+public class BottomNavigationView extends View {
     public BottomNavigationView(Context context) {
         this (context, null);
     }

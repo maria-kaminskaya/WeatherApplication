@@ -4,8 +4,15 @@
 
     <item android:title="@string/today"
         android:icon="@drawable/ic_today"
+        android:id="@+id/i_t"
+        android:enabled="true"
+        app:showAsAction="withText"
         />
 
     <item android:title="@string/forecast"
-        android:icon="@drawable/ic_forecast"/>
+        android:icon="@drawable/ic_forecast"
+        android:id="@+id/i_f"
+        android:enabled="true"
+        app:showAsAction="withText"
+        />
 </menu>
